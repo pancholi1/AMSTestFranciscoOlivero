@@ -1,0 +1,15 @@
+@mixin FamilyWeightSizeColor($family, $weight, $size, $color) {
+  font-family: $family, sans-serif;
+  font-style: normal;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: 140%;
+  color: $color;
+}
+
+@mixin DirectionAlignJustify($direction, $align, $justify) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+}

@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+# Test AMS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
+Quisiera aclarar que dejo el README original del boilerplate que explica detallado los script para poder gestionar la aplicacion.
 
 ### `npm start`
 

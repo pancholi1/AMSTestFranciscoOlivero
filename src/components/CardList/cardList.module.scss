@@ -1,0 +1,42 @@
+@import "../../styles/constants.scss";
+.containerCardList {
+  cursor: pointer;
+  @include DirectionAlignJustify(column, none, none);
+  background: white;
+  padding: 15px;
+  border-radius: 0px 0 25px 25px;
+  .containerDetails {
+    display: flex;
+    flex-direction: column;
+
+    .titleModel {
+      @include FamilyWeightSizeColor("Poppins-Regular", 500, 24px, #333333);
+    }
+    .subtitleBrandPrice {
+      @include DirectionAlignJustify(row, none, space-between);
+      margin-top: auto;
+    }
+
+    .priceHoverContainer {
+      display: none;
+
+      .priceHover {
+        padding: 4px 8px;
+        border-radius: 8px;
+        background: #ededed;
+        margin-right: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        font-size: 9px;
+      }
+    }
+  }
+}
+
+.containerCardList:hover {
+  transform: scale(1.02);
+}
+
+.containerCardList:hover .priceHoverContainer {
+  display: flex;
+}

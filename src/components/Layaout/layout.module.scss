@@ -1,0 +1,30 @@
+@import "../../styles/constants.scss";
+.containerlayout {
+  @include DirectionAlignJustify(column, none, none);
+  min-height: 100vh;
+  background: #f3f3f7;
+
+  .header {
+    @include DirectionAlignJustify(row, center, space-between);
+    background: white;
+
+    height: 80px;
+    .contaienrLogo {
+      @include DirectionAlignJustify(row, center, none);
+      .logoHeader {
+        height: 40px;
+      }
+      .titleHeader {
+        @include FamilyWeightSizeColor("Poppins-Bold", 600, 34px, #333333);
+      }
+    }
+    .cart {
+      margin-right: 30px;
+    }
+  }
+  .content {
+    margin: 20px;
+    flex: 1;
+    padding: 20px;
+  }
+}

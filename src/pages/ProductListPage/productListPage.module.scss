@@ -1,0 +1,41 @@
+@import "../../styles/constants.scss";
+
+.headerContent {
+  @include DirectionAlignJustify(row, none, space-between);
+  .textContent {
+    @include FamilyWeightSizeColor("Poppins-Regular", 600, 24px, #333333);
+  }
+  .containerSearch {
+    cursor: pointer;
+    @include DirectionAlignJustify(row, none, flex-start);
+
+    color: #fff;
+    border: none;
+    border-bottom: 2.3px solid #333333;
+
+    input {
+      border: none;
+      background: transparent;
+      width: 100%;
+      padding-left: 10px;
+      outline: none;
+      font-size: 16px;
+    }
+  }
+  .containerSearch:hover {
+    transform: scale(1.03);
+  }
+}
+
+.mosaico {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 40px;
+  @media (max-width: 1068px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
